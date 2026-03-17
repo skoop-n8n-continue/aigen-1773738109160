@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skoopsignage Tagging Guide</title>
+    <style>
+        :root {
+            --primary-color: #00b7af;
+            --dark-bg: #10181f;
+            --text-color: #333;
+            --light-bg: #f9f9fa;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: var(--text-color);
+            background-color: var(--light-bg);
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: var(--dark-bg);
+            color: white;
+            padding: 2rem 0;
+            text-align: center;
+            border-bottom: 4px solid var(--primary-color);
+        }
+
+        h1 {
+            margin: 0;
+            font-size: 2.5rem;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 2rem auto;
+            padding: 0 20px;
+        }
+
+        .concept-box {
+            background: white;
+            border-left: 5px solid var(--primary-color);
+            padding: 20px;
+            border-radius: 4px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+            margin-bottom: 2rem;
+        }
+
+        .step {
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+            margin-bottom: 2rem;
+            overflow: hidden;
+        }
+
+        .step-header {
+            background-color: var(--dark-bg);
+            color: white;
+            padding: 15px 20px;
+            display: flex;
+            align-items: center;
+        }
+
+        .step-number {
+            background-color: var(--primary-color);
+            color: white;
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            margin-right: 15px;
+        }
+
+        .step-content {
+            padding: 20px;
+        }
+
+        .step img {
+            max-width: 100%;
+            height: auto;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            margin-top: 15px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+
+        p {
+            margin-top: 0;
+        }
+
+        .highlight {
+            color: var(--primary-color);
+            font-weight: bold;
+        }
+    </style>
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta http-equiv="Expires" content="0">
+</head>
+<body>
+
+    <header>
+        <h1>Tagging Workflow Guide</h1>
+        <p>A comprehensive tutorial for managing tags on Skoopsignage</p>
+    </header>
+
+    <div class="container">
+
+        <div class="concept-box">
+            <h2>Understanding Tags in Digital Signage</h2>
+            <p>In a complex digital signage network, organization is key. <span class="highlight">Tags</span> provide a flexible, dynamic way to manage where your content plays.</p>
+            <p><strong>The Concept:</strong> Instead of manually assigning every piece of content to individual screens, you can assign <em>Tags</em> to both <strong>Screens</strong> and <strong>Playlist Items</strong>. When a screen checks for content, it can automatically play playlist items that share its assigned tags. For example, a screen tagged with "Ground Floor" will automatically pick up and play any promotional content also tagged with "Ground Floor". This makes scaling and targeting content incredibly efficient.</p>
+        </div>
+
+        <div class="step">
+            <div class="step-header">
+                <div class="step-number">1</div>
+                <h3>Login to the Dashboard</h3>
+            </div>
+            <div class="step-content">
+                <p>Start by navigating to <a href="https://cloud.skoopsignage.com/" target="_blank">cloud.skoopsignage.com</a> and logging in with your credentials.</p>
+                <img src="run_files/1_login_page.png?v=a1b2c3" alt="Login Page">
+                <img src="run_files/2_dashboard.png?v=a1b2c3" alt="Dashboard" style="margin-top: 20px;">
+            </div>
+        </div>
+
+        <div class="step">
+            <div class="step-header">
+                <div class="step-number">2</div>
+                <h3>Create New Tags</h3>
+            </div>
+            <div class="step-content">
+                <p>Before you can assign tags, you need to create them. Navigate to the <strong>Settings</strong> menu on the left panel, and click on the <strong>Tags</strong> tab. Here, you can type your tag names (e.g., "Ground Floor", "Promo", "Summer Sale") and click Create to add them to your global tag list.</p>
+                <img src="run_files/3_tags_created.png?v=a1b2c3" alt="Creating Tags">
+            </div>
+        </div>
+
+        <div class="step">
+            <div class="step-header">
+                <div class="step-number">3</div>
+                <h3>Assign Tags to a Screen</h3>
+            </div>
+            <div class="step-content">
+                <p>Now, let's tag a physical display. Go to the <strong>Screens</strong> section from the left panel. Locate your target screen (e.g., "Pro skoop stick home ground floor").</p>
+                <p>Click the three-dot menu icon on the right side of the screen's row, select <strong>Details</strong>, and then expand the <strong>Screen Tags</strong> accordion section. You can now search for and add the tags you created earlier.</p>
+                <img src="run_files/4_screen_tags.png?v=a1b2c3" alt="Adding Tags to a Screen">
+            </div>
+        </div>
+
+        <div class="step">
+            <div class="step-header">
+                <div class="step-number">4</div>
+                <h3>Assign Tags to Playlist Items</h3>
+            </div>
+            <div class="step-content">
+                <p>Finally, we tag the content. Navigate to the <strong>Playlists</strong> section and open your target playlist (e.g., "Smart Tags").</p>
+                <p>Find an item in your playlist, click the small <strong>Tag icon</strong> associated with it, and assign the relevant tags in the popup modal. Once saved, you can simply hover over the tag icon on the item to quickly see which tags are attached to it.</p>
+                <img src="run_files/5_playlist_tags.png?v=a1b2c3" alt="Viewing tags on a playlist item">
+            </div>
+        </div>
+
+    </div>
+
+</body>
+</html>
