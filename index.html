@@ -127,8 +127,8 @@
             </div>
             <div class="step-content">
                 <p>Start by navigating to <a href="https://cloud.skoopsignage.com/" target="_blank">cloud.skoopsignage.com</a> and logging in with your credentials.</p>
-                <img src="run_files/1_login_page.png?v=a1b2c3" alt="Login Page">
-                <img src="run_files/2_dashboard.png?v=a1b2c3" alt="Dashboard" style="margin-top: 20px;">
+                <img src="run_files/1_login_page.png?v=z8x9y0" alt="Login Page">
+                <img src="run_files/2_dashboard.png?v=z8x9y0" alt="Dashboard" style="margin-top: 20px;">
             </div>
         </div>
 
@@ -139,7 +139,7 @@
             </div>
             <div class="step-content">
                 <p>Before you can assign tags, you need to create them. Navigate to the <strong>Settings</strong> menu on the left panel, and click on the <strong>Tags</strong> tab. Here, you can type your tag names (e.g., "Ground Floor", "Promo", "Summer Sale") and click Create to add them to your global tag list.</p>
-                <img src="run_files/3_tags_created.png?v=a1b2c3" alt="Creating Tags">
+                <img src="run_files/3_tags_created.png?v=z8x9y0" alt="Creating Tags">
             </div>
         </div>
 
@@ -150,8 +150,8 @@
             </div>
             <div class="step-content">
                 <p>Now, let's tag a physical display. Go to the <strong>Screens</strong> section from the left panel. Locate your target screen (e.g., "Pro skoop stick home ground floor").</p>
-                <p>Click the three-dot menu icon on the right side of the screen's row, select <strong>Details</strong>, and then expand the <strong>Screen Tags</strong> accordion section. You can now search for and add the tags you created earlier.</p>
-                <img src="run_files/4_screen_tags.png?v=a1b2c3" alt="Adding Tags to a Screen">
+                <p>Click the three-dot menu icon on the right side of the screen's row, select <strong>Details</strong>. The <strong>Screen Details</strong> panel will appear on the right side. Scroll down to expand the <strong>Screen Tags</strong> accordion section. You can now search for and add the tags you created earlier.</p>
+                <img src="run_files/6_screen_details_tags.png?v=z8x9y0" alt="Adding Tags to a Screen Details Page">
             </div>
         </div>
 
@@ -162,21 +162,12 @@
             </div>
             <div class="step-content">
                 <p>Finally, we tag the content. Navigate to the <strong>Playlists</strong> section and open your target playlist (e.g., "Smart Tags").</p>
-                <p>Find an item in your playlist, click the small <strong>Tag icon</strong> associated with it, and assign the relevant tags in the popup modal. Once saved, you can simply hover over the tag icon on the item to quickly see which tags are attached to it.</p>
-                <img src="run_files/5_playlist_tags.png?v=a1b2c3" alt="Viewing tags on a playlist item">
+                <p>Find an item in your playlist, click the small <strong>Tag icon</strong> (it looks like a price tag) associated with it to assign the relevant tags. Once saved, you can simply hover over the tag icon on the item to quickly see a tooltip displaying which tags are attached to it.</p>
+                <img src="run_files/7_playlist_item_tags.png?v=z8x9y0" alt="Viewing tags on a playlist item entry">
             </div>
         </div>
 
     </div>
 
-  <script>
-    if ('serviceWorker' in navigator) {
-      window.addEventListener('load', function () {
-        navigator.serviceWorker.register('./sw.js')
-          .then(function (reg) { console.log('[PWA] SW registered:', reg.scope); })
-          .catch(function (err) { console.warn('[PWA] SW registration failed:', err); });
-      });
-    }
-  </script>
 </body>
 </html>
